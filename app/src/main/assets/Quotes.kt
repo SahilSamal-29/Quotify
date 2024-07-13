@@ -1,0 +1,1 @@
+class Quotes : ArrayList<QuotesItem>()
