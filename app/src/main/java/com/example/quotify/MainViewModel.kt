@@ -3,11 +3,12 @@ package com.example.quotify
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import com.google.gson.Gson
+import kotlin.random.Random
 
 
 class MainViewModel(val context: Context): ViewModel() {
     private var quoteList: Array<quote> = emptyArray()
-    private var index = 0
+    private var index = Random.nextInt(0 , 1500) //this will give random index from 0 to 1500
 
     init {
         quoteList = loadQuotesFromAssets()
