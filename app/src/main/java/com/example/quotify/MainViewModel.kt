@@ -6,7 +6,7 @@ import com.google.gson.Gson
 import kotlin.random.Random
 
 
-class MainViewModel(val context: Context): ViewModel() {
+class MainViewModel(private val context: Context): ViewModel() {
     private var quoteList: Array<quote> = emptyArray()
     private var index = Random.nextInt(0 , 1500) //this will give random index from 0 to 1500
 
